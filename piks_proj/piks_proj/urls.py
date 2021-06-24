@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import piks_app.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', piks_app.views.index, name='index'),
+    path('all/',  piks_app.views.all, name='index'),
+    path('best/',  piks_app.views.best, name='best'),
+    path('category/',  piks_app.views.category, name='category'),
+    path('new/',  piks_app.views.new, name='new'),
+    path('play/',  piks_app.views.play, name='play'),
 ]
