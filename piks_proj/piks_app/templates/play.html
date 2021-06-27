@@ -1,12 +1,136 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>PIKS</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        #container {
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        #header {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bcbcbc;
+        }
+        #content {
+            width: 80%;
+            padding: 10px;
+            float: left;
+            border: 1px solid #bcbcbc;
+        }
+        #sidebar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            float: right;
+            text-align:center;
+            border: 1px solid #bcbcbc;
+        }
+        #content-header {
+            display: flex; 
+            flex-direction: row;
+            width: 100%;
+        }
+
+        /* #footer {
+            clear: both;
+            padding: 20px;
+            border: 1px solid #bcbcbc;
+        } */
+        .date{
+            text-align: right;
+        }
+        .about{
+            width: 80%;
+            display: flex; 
+            flex-direction: row;
+            padding: 10px;
+            line-height: 100%;
+        }
+        .about p{
+            vertical-align: middle;
+            padding: 10px;
+        }
+        .like{
+            display: flex; 
+            flex-direction: row;
+            text-align: right;
+            font-size: 20px;
+            width: 20%;
+        }
+        .like p{
+            vertical-align: middle;
+            padding: 10px;
+        }
+        @media ( max-width: 780px ) {
+            #container {
+            width: auto;
+            }
+            #content {
+            float: none;
+            width: auto;
+            }
+            #sidebar {
+            float: none;
+            width: auto;
+            }
+        }
+        </style>
+    </head>
+    <body>
     {% include "topbar.html" %}
-</body>
+    <div id="container">
+        <div id="content" style="height:600px;">
+            <div class = "date">
+                <p>2021-07.04</p>
+            </div>
+                <iframe width="100%" height="90%" src="https://www.youtube.com/embed/mYrP4jjIzQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content" style="height:300px;">  
+            <div id="content-header">
+                <div class = "about">
+                    <h1> 돌고래 유괴단의 공익광고 '2066' </h1>
+                    <p> #재미있는 </p>
+                    <p> #신박한 </p>
+                    <p> #공익광고 </p>
+                </div>
+                <div class = "like">
+                    <p style="color: red;"> ❤ </p>
+                    <p style="color: red;"> 180 </p>
+                    <p style="color: goldenrod;"> ◈ </p>
+                    <p style="color: goldenrod;"> 200 </p>
+                </div>
+            </div>
+
+                
+            <div class = "description">
+                <p> 광고에 대한 설명이 들어갈 곳이다.</p>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <div id="sidebar" style="height: 30px; ">
+                <p>추천 영상</p>
+            </div>
+            <div id="sidebar">
+                <iframe width="100%" height="180" src="https://www.youtube.com/embed/nebigt5Al80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="sidebar">
+                <iframe width="100%" height="180" src="https://www.youtube.com/embed/i-E7NiyRDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="sidebar">
+                <iframe width="100%" height="180" src="https://www.youtube.com/embed/RII-T8HNOAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="sidebar">
+                <iframe width="100%" height="180" src="https://www.youtube.com/embed/Zdhm277s0Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- <div id="xfooter">
+            <p>Copyright</p>
+        </div> -->
+        </div>
+    </body>
 </html>
