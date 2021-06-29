@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import piks_app.views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +27,4 @@ urlpatterns = [
     path('category/',  piks_app.views.category, name='category'),
     path('new/',  piks_app.views.new, name='new'),
     path('play/',  piks_app.views.play, name='play'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
