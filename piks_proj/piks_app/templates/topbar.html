@@ -3,3 +3,55 @@
 <div  style="text-align: center;">
     <h> -------------------- top bar 상속 중 ..  ----------------</h>
 </div>
+
+<!-- 0629 승현 추가-->
+<style>
+    .not-visible {
+        visibility: hidden;
+    }
+    span{
+        color: orange;
+    }
+
+</style>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column fixed-top">
+  <header class="mb-auto">
+    <div>
+        <nav class="nav nav-masthead justify-content-center float-md-start">
+            <h3 class="float-md-start mb  0" style="font-family: 'Anton', sans-serif; color:orange;">P I K S</h3>
+            <p class="not-visible">간격</p>
+            <a class="nav-link" href="#" style="color: white;">최신광고</a>
+            <a class="nav-link" href="#" style="color: white;">인기광고</a>
+            <a class="nav-link" href="#" style="color: white;">ALL</a>
+        </nav>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="광고 찾기..." aria-label="Search">
+              </form>
+            {% if user.is_authenticated %}
+              <button type="button" class="btn btn-outline-light me-2">로그아웃</button>
+              <p class="not-visible">간격</p>
+            {% else %}
+              <i class="fas fa-language"></i>
+              <button type="button" class="btn btn-outline-light me-2">로그인</button>
+              <button type="button" class="btn btn-warning">회원가입</button>
+              <p class="not-visible">간격</p>
+            {% endif %}
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-white text-decoration-none dropdown-toggle" style="color: white;" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+  </header>
