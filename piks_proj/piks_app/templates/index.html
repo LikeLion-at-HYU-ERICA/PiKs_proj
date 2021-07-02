@@ -21,20 +21,53 @@
         span{
             color: orange;
         }
-        
+        .px-3 p{
+            text-transform: capitalize;
+            font-size: 40px;
+            white-space: nowrap;
+            color: #212529;
+            margin: 0;
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .px-3 p::before{
+            content: "여기 Skip 할 수 없는 광고가 있습니다.";
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            overflow: hidden;
+            border-right: 3px solid white;
+            animation: typing 6s steps(30) infinite;
+        }
+        @keyframes typing{
+            0% {
+                width: 0%;
+            }
+            50%{
+                width:101%;
+            }
+            100%{
+                width:0%;
+            }
+    }
     </style>
     
             <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column fixed-top">
                 {% include "topbar.html" %}
             
             <main class="px-3">
-                <p class="lead" style="font-size: 40px;">여기 Skip 할 수 없는 광고가 있습니다.</p>
+                <p>여기 Skip 할 수 없는 광고가 있습니다.</p>
                 <br> 
                 <h1 style="font-family: 'Anton', sans-serif; color:rgb(255, 165, 0); font-size: 100px;"> P I K S </h1>
                 <br>
-                <p class="lead">
+                <h5 class="lead">
                 <a href="{% url 'all' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-dark" style="border-width: 2px; font-size: 25px;">  픽스 하러가기  </a>
-                </p>
+                </h5>
             </main>
             
             <footer class="mt-auto text-white-50">

@@ -26,7 +26,7 @@
             .mb-auto {
                 margin-bottom: 0;
             }
-            body { background-color: black; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Roboto', sans-serif; letter-spacing: 0px; font-size: 16px; color: #7d7f82; font-weight: 400; line-height: 32px; }
+            body { background-color: #212529!important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family:'Noto Sans KR', sans-serif !important; letter-spacing: 0px; font-size: 16px; color: #7d7f82; font-weight: 400; line-height: 32px; }
             h1, h2, h3, h4, h5, h6 { color: #26282c; margin: 0px 0px 12px 0px; font-family: 'Glegoo', serif; font-weight: 700; line-height: 1; }
             h1 { font-size: 36px; }
             h2 { font-size: 26px; line-height: 38px; }
@@ -52,10 +52,10 @@
             .mb10{margin-bottom:10px;}
             .section-title { margin-bottom: 40px; }
         </style>
-    <body class="d-flex h-100 text-center text-white bg-dark">  
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column fixed-top">
+    <body class="d-flex h-100 text-white">  
+        <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
                 {% include "topbar.html" %}
-        <div id="container">
+        <div id="container text-center">
             <div id="content">
                 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
                 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -75,47 +75,47 @@
                                     </div>
 
                                     <div class="section-title">
-                                        <h2>최신 광고</h2>
+                                        <h2>HOT</h2>
                                     </div>
                                 </div>
                                 <!-- /.section-title -->
                             </div>
-                            <div class="row">
+                            <div class="row text-center">
                                 <!-- video-testimonail -->
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/tm-img-10-tn.jpg' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad1.png' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
-                                            <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
+                                            <iframe src="https://www.youtube.com/embed/IqB8SOYG-h4" allowfullscreen></iframe>
                                             </iframe>
                                         </div>
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">수영복 광고</a>
-                                        <p>#청량한 #푸른 #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
+                                        <p>#CUCCI #KAI #FASHION</p>
                                         <h3 style="visibility: hidden;">dd</h3>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/tm-img-11-tn.jpg' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad2.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
-                                            <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
+                                            <iframe src="https://www.youtube.com/embed/VHYaGZ-xcC8" allowfullscreen>
                                             </iframe>
                                         </div>
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">수영복 광고</a>
-                                        <p>#청량한 #푸른 #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
+                                        <p>#NIKE #Didactic #</p>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/tm-img-05-tn.jpg' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad3.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
                                             <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
                                             </iframe>
@@ -123,44 +123,44 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">수영복 광고</a>
-                                        <p>#청량한 #푸른 #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
+                                        <p>#Hyundai #car #super bowl</p>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/tm-img-04-tn.jpg' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad4.png' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
-                                            <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
+                                            <iframe src="https://www.youtube.com/embed/4aHxRT9a_SA" allowfullscreen>
                                             </iframe>
                                         </div>
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">수영복 광고</a>
-                                        <p>#청량한 #푸른 #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
+                                        <p>#Monami #pen #Worthy</p>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/tm-img-08-tn.jpg' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad5.png' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
-                                            <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
+                                            <iframe src="https://www.youtube.com/embed/Fwb1we1h2JI" allowfullscreen>
                                             </iframe>
                                         </div>
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">수영복 광고</a>
-                                        <p>#청량한 #푸른 #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
+                                        <p>Simmonskorea #bed #수영복</p>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/tm-img-16.jpg' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad6.png' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
                                             <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
                                             </iframe>
@@ -168,8 +168,8 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">수영복 광고</a>
-                                        <p>#청량한 #푸른 #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
+                                        <p>#Burberry #fashion #Music</p>
                                     </div>
                                 </div>
                                 <
