@@ -23,11 +23,14 @@
         }
         .px-3 p{
             text-transform: capitalize;
-            font-size: 40px;
+            font-size: 35px;
             white-space: nowrap;
             color: #212529;
             margin: 0;
             position: absolute;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-family:'Noto Sans KR', sans-serif !important;
             top: 37%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -42,14 +45,14 @@
             color: white;
             overflow: hidden;
             border-right: 3px solid white;
-            animation: typing 6s steps(30) infinite;
+            animation: typing 8s steps(30) infinite;
         }
         @keyframes typing{
             0% {
                 width: 0%;
             }
             50%{
-                width:101%;
+                width:100%;
             }
             100%{
                 width:0%;
