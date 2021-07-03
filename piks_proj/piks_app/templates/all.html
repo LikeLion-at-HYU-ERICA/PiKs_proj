@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIKS</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
 </head>
 
-    <!--{% include "topbar.html" %}-->
-
     <style>
+        .not-visible {
+            visibility: hidden;
+        }
         body{
             font-weight: 400;
             font-size: 15px;
             font-family: 'NanumSquare';
-            line-height: 1.8em;
+            line-height: 3.2em;
             text-rendering:optimizeLegibility;
             -webkit-font-smoothing: antialiased;
             color: #3c3c3c;
-            margin: 0px;
             padding: 0px;
+            background-color: #212529;
         }
 
         .ad_section{
-            background-color: #fafafa;
+            background-color:#212529;
             text-align: center;
             padding: 15px 0px 50px
         }
@@ -32,13 +40,13 @@
         .ad_section .ad_item{
             position: relative;
             width: 300px;
-            height: 260px;
+            height: 200px;
             vertical-align: top;
             margin: 20px 15px;
             background-color: #ffffff;
             display: inline-block;
             text-align: left;
-            box-shadow: 0px 0px 30px #eee;
+            box-shadow: 0px 0px 30px 97918F;
         }
     
         .ad_section .ad_item .ad_img{
@@ -56,6 +64,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            text-align: center;
         }
     
         .ad_section .ad_item .ad_contents .ad_info .ad_writer{
@@ -144,230 +153,151 @@
             opacity: 1;
         }
     </style>
-<body>
+<body class="d-flex h-100">  
+    <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
+            {% include "topbar.html" %}
     <div class="contents_wrap">
         
         <div class="ad_section">
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://www.usmagazine.com/wp-content/uploads/2021/03/One-Piece-Swimsuit-Stock-Photo.jpg?quality=86&strip=all);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> FASHION </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://cdn.thesolewomens.co.uk/2020/11/AIR-JORDAN-1_w1000.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> SHOES </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://i2.wp.com/encoremusicians.com/blog/wp-content/uploads/2016/08/Singer.jpg?fit=1540%2C778&ssl=1);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> MUSIC </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://www.oxy.edu/sites/default/files/landing-page/banner-images/art-art-history_main_1440x800.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> ART </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> TRAVEL </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://www.wfla.com/wp-content/uploads/sites/71/2021/02/AP21039076385793.jpg?w=2560&h=1440&crop=1);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> SPORTS </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://static01.nyt.com/images/2020/03/24/arts/gaming-newbies-stadia/gaming-newbies-stadia-superJumbo.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> GAME </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> DESIGN </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> DESIGN </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> DESIGN </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> DESIGN </div>
                 </div>
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image:(https://drive.google.com/uc?id=1Yr2zr41wlfFVRLC7oRRQGIws1S_zzlyD/">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> 로고가 없는 특별함 </div>
-                    <div class="ad_info">
-                        <span class="ad_writer"> by 보테가베네타</span>
-                        <span class="ad_view"><img src="* 이미지 링크 넣기_조회수"/>77</span>
-                        <span class="ad_comment"><img src="* 이미지 링크 넣기_댓글"/>7</span>
-                    </div>
-                    <div class="ad_bottom">
-                        <div class="ad_time">7시간 전</div>
-                        <div class="ad_favorite"><img src="* 이미지 링크넣기_컬랙션"/></div>
-                    </div>
+                    <div class="ad_title"> DESIGN </div>
                 </div>
             </div>
 
+            <div class= "ad_item">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> DESIGN </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> DESIGN </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> DESIGN </div>
+                </div>
+            </div>
+
+            
 
         </div>
     </div>
-
-
+</div>
 </body>
 </html>
