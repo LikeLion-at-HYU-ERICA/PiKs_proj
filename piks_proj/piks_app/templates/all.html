@@ -152,11 +152,27 @@
         .ad_section .ad_item:hover .ad_img .more_bt{
             opacity: 1;
         }
+        .transitions{
+            background: #212529;
+            position: relative;
+            animation: fade 4s forwards;
+            }
+            @keyframes fade {
+            0% {
+                opacity:0.1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity:1;
+            }
+            }
     </style>
 <body class="d-flex h-100">  
     <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
             {% include "topbar.html" %}
-    <div class="contents_wrap">
+    <div class="contents_wrap transitions">
         
         <div class="ad_section">
             <div class= "ad_item">
