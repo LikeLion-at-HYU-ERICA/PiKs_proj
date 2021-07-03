@@ -15,9 +15,18 @@
 </head>
 
         <style>
-            .body{
+            body{
+            font-weight: 400;
+            font-size: 15px;
             font-family: 'NanumSquare';
-            }
+            line-height: 3.2em; 
+            text-rendering:optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            color: #3c3c3c;
+            margin: 0px;
+            padding: 0px;
+            background-color: #212529!important;
+        }
         /* for topbar */
         .not-visible {
             visibility: hidden;
@@ -100,9 +109,9 @@
             }
         }
         </style>
-<body class="d-flex h-100 text-center text-white bg-dark">  
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column fixed-top">
-            {% include "topbar.html" %}
+    <body class="d-flex h-100 text-white line-height: 3.2em;">  
+        <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
+                {% include "topbar.html" %}
     <div id="container">
         <div id="content" style="height:700px;">
             <div class = "date">

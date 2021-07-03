@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>PIKS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +25,19 @@
             .mb-auto {
                 margin-bottom: 0;
             }
-            body { background-color: #212529!important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family:'Noto Sans KR', sans-serif !important; letter-spacing: 0px; font-size: 16px; color: #7d7f82; font-weight: 400; line-height: 32px; }
-            h1, h2, h3, h4, h5, h6 { color: #26282c; margin: 0px 0px 12px 0px; font-family: 'Glegoo', serif; font-weight: 700; line-height: 1; }
+            body{
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'NanumSquare';
+            line-height: 3.2em; 
+            text-rendering:optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            color: #3c3c3c;
+            margin: 0px;
+            padding: 0px;
+            background-color: #212529!important;
+        }
+            h1, h2, h3, h4, h5, h6 { color: white; margin: 0px 0px 12px 0px;  font-family: 'NanumSquare'; font-weight: 700; line-height: 1; }
             h1 { font-size: 36px; }
             h2 { font-size: 26px; line-height: 38px; }
             h3 { font-size: 22px; line-height: 32px; }
@@ -44,7 +54,6 @@
 
             .video-testimonial-block { position: relative; width: auto; height: 206px; overflow: hidden; margin-bottom: 30px; }
             .video-testimonial-block .video-thumbnail { height: 100%; width: 100%; position: absolute; z-index: 1; background-size: cover; top: 0; left: 0; }
-            .video-testimonial-block .video { }
             .video-testimonial-block .video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0px; }
             .video-testimonial-block .video-play { position: absolute; z-index: 2; top: 50%; left: 50%; margin-left: -40px; margin-top: -18px; text-decoration: none; }
             .video-testimonial-block .video-play::before { content: "\f144"; font: normal normal normal 14px/1; font-family: 'Font Awesome\ 5 Free'; font-weight: 900; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 50px; color: #b3b5bc; }
@@ -52,17 +61,16 @@
             .mb10{margin-bottom:10px;}
             .section-title { margin-bottom: 40px; }
         </style>
-    <body class="d-flex h-100 text-white">  
+    <body class="d-flex h-100 text-white line-height: 3.2em;">  
         <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
                 {% include "topbar.html" %}
         <div id="container text-center">
             <div id="content">
-                <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
+                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
                 <!------ Include the above in your HEAD tag ---------->
                 
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+                <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
                 <!-- video-testimonial-section -->
                     <div class="space-medium">
                         <div class="container">
@@ -109,7 +117,7 @@
                                     </div>
                                     <div class="video-testimonial-content">
                                         <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#NIKE #Didactic #</p>
+                                        <p>#NIKE #Didactic</p>
                                     </div>
                                 </div>
 
@@ -124,7 +132,7 @@
                                     </div>
                                     <div class="video-testimonial-content">
                                         <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#Hyundai #car #super bowl</p>
+                                        <p>#Hyundai #car #super_bowl</p>
                                     </div>
                                 </div>
 
@@ -172,8 +180,8 @@
                                         <p>#Burberry #fashion #Music</p>
                                     </div>
                                 </div>
-                                <
-                                <div style="visibility:hidden;" style=class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            
+                                <div style="visibility:hidden;" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/tm-img-16.jpg' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
