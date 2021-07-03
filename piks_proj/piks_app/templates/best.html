@@ -23,10 +23,9 @@
         font-weight: 400;
         font-size: 15px;
         font-family: 'NanumSquare';
-        line-height: 3.2em;
+        line-height: 1.8em;
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        color: #3c3c3c;
         margin: 0px;
         padding: 0px;
         background-color: #212529;
@@ -44,18 +43,21 @@
     #contents h6{
         text-align: center;
         width:100%;
+        color: black;
     }
 
     .box {
         width:65%;
-        height:30%;
+        height:42%;
         vertical-align: top;
         margin: 20px 15px;
         display: inline-block;
         text-align: left;
-        background-color: #ffffff;
+        background-color: 33343B;
 
     }
+
+    
     .box img {
         max-width:100%;
 
@@ -85,35 +87,46 @@
         width:100%;
         height:auto;
         padding:20px;
-        box-sizing:border-box;
-        border:2px solid #666;
-        margin: 0 auto;
+        
+        
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
 
     }
     #contents h3 {
+        margin-top: 10px;
         text-align:center;
         width:100%;
 
     }
+
+    #contents h6{
+        text-align: center;
+        width:100%;
+        color: white;
+    }
+
+
     #contents p {
         text-align:center;
         width:100%;
     }
 
-    .box {
-        box-shadow:4px 4px 4px #eee;
-        width:43%;
-        height:30%;
-        border:1px solid #ddd;
-        padding:10px;
-        margin:1%;
-
+    .box{
+        position: relative;
+        width: 300px;
+        height: 40%;
+        vertical-align: top;
+        margin: 20px 15px;
+        background-color: 33343B;
+        display: inline-block;
+        text-align: left;
+        box-shadow: 0px 0px 30px 97918F;
     }
     .box img {
         max-width:50%;
+        height: 150px;
 
     }
     .box img:hover {opacity:0.8;}
@@ -123,7 +136,7 @@
         text-align:center;
     }
     .box p {
-        color:#666;
+        color:lightgray;
         font-size:14px;
     }
     .red {
@@ -152,6 +165,7 @@
 
     }
     #contents h3 {
+        margin-top: 10px;
         text-align:center;
         width:100%;
 
@@ -164,8 +178,7 @@
     .box {
         box-shadow:4px 4px 4px 97918F;
         width:15%;
-        height:10%;
-        border:1px solid #ddd;
+        height:42%;
         padding:10px;
         margin:1%;
         flex-wrap:wrap;
@@ -202,7 +215,7 @@
 </style>
 </head>
 <body class="d-flex h-100 text-white">  
-    <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
+    <div class="cover-container d-flex w-110 h-300 p-3 mx-auto flex-column fixed-top">
             {% include "topbar.html" %}
 
         <div id="contents">
@@ -217,7 +230,7 @@
 
         <a href="#"><img src="../static/img/samsung.jpg" alt="slide image"></a>
 
-        <h5> 가전 그 이상.쉐프컬랙션 </h5>
+        <h5> 가전 그 이상.쉐프컬렉션 </h5>
         <h6>#세련된 #가전 #요리</h6>
         <p> 삼성가전 </p>
         <div class="red">BEST</div>
@@ -226,10 +239,10 @@
         ​
 
         <div class="box">
-        <a href="#"><img src="" alt="slide image"></a>
+        <a href="#"><img src="../static/img/dyson.jpg" alt="slide image"></a>
 
         <h5> 오직 다이슨만 가능합니다 </h5>
-
+        <h6>#청소 #디자인 #혁신</h6>
         <p> 다이슨 코리아</p>
 
         <div class="red">BEST</div> 
@@ -240,11 +253,11 @@
 
         <div class="box">
 
-        <a href="#"><img src="" alt="slide image"></a>
+        <a href="#"><img src="../static/img/ad1.PNG" alt="slide image"></a>
 
-        <h5> 광고광고 </h5>
-
-        <p> 광고주님 </p>
+        <h5> 구찌 : 캡슐 컬렉션 </h5>
+        <h6>#구찌 #명품 #패션</h6>
+        <p> 구찌 </p>
 
         <div class="red">BEST</div> 
 
@@ -254,25 +267,25 @@
 
         <div class="box">
 
-        <a href="#"><img src="" alt="slide image"></a>
+        <a href="#"><img src="../static/img/cocacola.jpg" alt="slide image"></a>
 
-        <h5> 광고광고 </h5>
-
-        <p> 광고주님 </p>
+        <h5> 코카콜라 맛있어 </h5>
+        <h6>#음료 #화려한 #감각적인</h6>
+        <p> 코카콜라 컴퍼니 </p>
 
         <div class="red">BEST</div> 
 
         </div>
 
-        <!--줄바꿈 하고싶다-->
-
+    
+    
         <div class="box">
 
-        <a href="#"><img src="" alt="slide image"></a>
+        <a href="#"><img src="../static/img/bmw.jpg" alt="slide image"></a>
             
-        <h5> 광고광고 </h5>
-            
-        <p> 광고주님 </p>
+        <h5> The speed of safety </h5>
+        <h6>#고급스러움 #어두운 #자동차</h6>   
+        <p> BMW </p>
             
         <div class="red">BEST</div> 
             
@@ -281,42 +294,61 @@
             
         <div class="box">
 
-        <a href="#"><img src="" alt="slide image"></a>
+        <a href="#"><img src="../static/img/asus.jpg" alt="slide image"></a>
                 
-        <h5> 광고광고 </h5>
-                
-        <p> 광고주님 </p>
+        <h5> 프로를 위한 프로 </h5>
+        <h6>#속도감 #디자인 #세련된</h6>       
+        <p> ASUS </p>
                 
         <div class="red">BEST</div> 
                 
-        </div>
-
-
-        <div class="box">
-
-        <a href="#"><img src="" alt="slide image"></a>
-                    
-        <h5> 광고광고 </h5>
-                    
-        <p> 광고주님 </p>
-                    
-        <div class="red">BEST</div> 
-                    
         </div>
 
 
         <div class="box">
 
-        <a href="#"><img src="" alt="slide image"></a>
+        <a href="#"><img src="../static/img/bottega.jpg" alt="slide image"></a>
                     
-        <h5> 광고광고 </h5>
-                    
-        <p> 광고주님 </p>
+        <h5> 로고없는 품격 </h5>
+        <h6>#명품 #브라운 #가방</h6>        
+        <p> 보테가베네타 </p>
                     
         <div class="red">BEST</div> 
                     
         </div>
 
+
+        <div class="box">
+
+        <a href="#"><img src="../static/img/fashion.jpg" alt="slide image"></a>
+                    
+        <h5> 소재에서 오는 자신감 </h5>
+        <h6>#패션 #여성 #무대</h6>        
+        <p> THEORY </p>  
+        <div class="red">BEST</div>         
+                    
+        </div>
+
+        <div class="box">
+
+            <a href="#"><img src="../static/img/mac.jpg" alt="slide image"></a>
+    
+            <h5> For the love </h5>
+            <h6>#메이크업 #블랙핑크 #다채로운</h6>
+            <p> MAC 코스메틱 </p>
+            <div class="red">BEST</div>
+            </div>
+
+
+         <div class="box">
+
+            <a href="#"><img src="../static/img/sealy.jpg" alt="slide image"></a>
+        
+            <h5> 흔들리지 않는 편안함 </h5>
+            <h6>#메트리스 #편안함 #평화로운</h6>
+            <p> SEALY </p>
+            <div class="red">BEST</div>
+            </div>
                 
 
         ​
