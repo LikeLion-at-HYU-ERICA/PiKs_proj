@@ -17,5 +17,3 @@ def play(request):
 def best(request):
     return render(request, 'best.html')
 
-def category(request):
-    return render(request, 'category.html')
