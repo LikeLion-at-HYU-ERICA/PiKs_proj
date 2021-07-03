@@ -60,12 +60,28 @@
             .video-testimonial-block .video-play:hover::before { color: #172651; }
             .mb10{margin-bottom:10px;}
             .section-title { margin-bottom: 40px; }
+            .transitions{
+            background: #212529;
+            position: relative;
+            animation: fade 2s forwards;
+            }
+            @keyframes fade {
+            0% {
+                opacity:0.1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity:1;
+            }
+            }
         </style>
     <body class="d-flex h-100 text-white line-height: 3.2em;">  
         <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
                 {% include "topbar.html" %}
         <div id="container text-center">
-            <div id="content">
+            <div id="content" class="transitions">
                 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
                 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
                 <!------ Include the above in your HEAD tag ---------->
@@ -100,15 +116,15 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#CUCCI #KAI #FASHION</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">#CUCCI  #KAI  #FASHION</a>
+                                        <p>45 minutes ago</p>
                                         <h3 style="visibility: hidden;">dd</h3>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/ad2.PNG' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/nike.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
                                             <iframe src="https://www.youtube.com/embed/VHYaGZ-xcC8" allowfullscreen>
                                             </iframe>
@@ -116,14 +132,14 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#NIKE #Didactic</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">#NIKE #Didactic</a>
+                                        <p>1 hour ago</p>
                                     </div>
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
-                                        <div class="video-thumbnail"><img src="{% static 'img/ad3.PNG' %}" alt="" class="img-fluid"></div>
+                                        <div class="video-thumbnail"><img src="{% static 'img/ad7.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
                                             <iframe src="https://www.youtube.com/embed/mYrP4jjIzQk" allowfullscreen>
                                             </iframe>
@@ -131,8 +147,8 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#Hyundai #car #super_bowl</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">#Hyundai #car #super_bowl</a>
+                                        <p>2 hours ago</p>
                                     </div>
                                 </div>
 
@@ -146,8 +162,8 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#Monami #pen #Worthy</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">#Monami #pen #Worthy</a>
+                                        <p>4 hours ago</p>
                                     </div>
                                 </div>
 
@@ -161,8 +177,8 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>Simmonskorea #bed #수영복</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">Simmonskorea #bed #comfortable</a>
+                                        <p>6 hours ago</p>
                                     </div>
                                 </div>
                                 
@@ -176,8 +192,8 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">광고</a>
-                                        <p>#Burberry #fashion #Music</p>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 25px; text-decoration:none; color:aliceblue;">#Burberry #fashion #Music</a>
+                                        <p>1 day ago</p>
                                     </div>
                                 </div>
                             
