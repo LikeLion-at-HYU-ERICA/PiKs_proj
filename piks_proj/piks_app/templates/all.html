@@ -168,8 +168,21 @@
                 opacity:1;
             }
             }
+
+            .slideupup{
+                position: relative;
+                animation: slideup 2s forwards;
+            }
+            @keyframes slideUp {
+        0% {
+            transform: translateY(300px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+        }
     </style>
-<body class="d-flex h-100">  
+<body class="d-flex h-100 ">  
     <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
             {% include "topbar.html" %}
     <div class="contents_wrap transitions">

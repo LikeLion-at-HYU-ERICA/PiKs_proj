@@ -78,6 +78,9 @@
                 opacity:1;
             }
             }
+        h1{
+            text-transform:uppercase;
+        }
         /* .px-3 h1::before{
             content: " P I K S ";
             position:absolute;
@@ -123,7 +126,7 @@
             <main class="px-3">
                 <p>여기 Skip 할 수 없는 광고가 있습니다.  </p>
                 <br><br>
-                <h1 class="transitions" style="font-family: 'Anton', sans-serif; color:rgb(255, 165, 0); font-size: 100px;"> P I K S </h1>
+                <h1 class="transitions animations" style="font-family: 'Anton', sans-serif; color:rgb(255, 165, 0); font-size: 100px;"> P I K S </h1>
                 <br>
                 <h5 class="lead">
                     <br>
@@ -140,7 +143,14 @@
         </body>
             <!-- 페이지 이동 js -->
 
-
-
-
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+    $('h1').mousemove(function(e){
+        var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);
+        var rYP = (e.pageY - this.offsetTop+$(this).height()/2);
+        $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+        });
+    });
+</script>
 </html>
