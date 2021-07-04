@@ -36,15 +36,15 @@
             padding: 0px;
             background-color: #212529!important;
         }
-            h1, h2, h3, h4, h5, h6 { color: white; margin: 0px 0px 12px 0px;  font-family: 'NanumSquare'; font-weight: 700; line-height: 1; }
+            h1, h2, h3, h4, h5, h6 { color: white; margin: 0px 0px 12px 0px;  font-family: 'NanumSquare';  line-height: 1; }
             h1 { font-size: 36px; }
             h2 { font-size: 26px; line-height: 38px; }
             h3 { font-size: 22px; line-height: 32px; }
             h4 { font-size: 20px; }
             h5 { font-size: 16px; line-height: 27px; }
             h6 { font-size: 12px; }
-            p { margin: 0 0 20px; line-height: 1.7; opacity: 0.5; font-style: oblique; }
-            p:last-child { margin: 0px; }
+            p { margin: 10 10 0 20px; margin-top:10px; font-size: 12px; line-height: 1.7; opacity: 0.5; font-style: oblique; }
+            p:last-child { margin: 5px; }
             ul, ol { font-family: 'Roboto', sans-serif; }
             a { text-decoration: none; color: #7d7f82; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
             a:focus, a:hover { text-decoration: none; color: rgb(254, 91, 16); }
@@ -58,7 +58,7 @@
             .video-testimonial-block .video-play::before { content: "\f144"; font: normal normal normal 14px/1; font-family: 'Font Awesome\ 5 Free'; font-weight: 900; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 50px; color: #b3b5bc; }
             .video-testimonial-block .video-play:hover::before { color:  rgb(255, 165, 0);; }
             .mb10{margin-bottom:10px;}
-            .section-title { margin-bottom: 20px; }
+            .section-title h1{ margin-bottom: 30px; font-weight: 900; }
             .transitions{
             background: #212529;
             position: relative;
@@ -127,7 +127,7 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content transitions">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 23px; text-decoration:none; color:aliceblue;">#CUCCI  #Kai  #Fashion</a>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 21px; text-decoration:none; color:aliceblue;">#CUCCI  #Kai  #Fashion</a>
                                         <p>21 minutes ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 40px;'>
@@ -145,7 +145,7 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content transitions">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 23px; text-decoration:none; color:aliceblue;">#Nike #SPORTS #meaningful</a>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 21px; text-decoration:none; color:aliceblue;">#Nike #SPORTS #meaningful</a>
                                         <p>1 hour ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 40px;'>
@@ -163,7 +163,7 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content transitions">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 23px; text-decoration:none; color:aliceblue;">#Sandy_Hook_Promise #Public</a>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 21px; text-decoration:none; color:aliceblue;">#Sandy_Hook_Promise #Public</a>
                                         <p>2 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 40px;'>
@@ -180,7 +180,7 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content transitions">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 23px; text-decoration:none; color:aliceblue;">#Monami #pen #Worthy</a>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 21px; text-decoration:none; color:aliceblue;">#Monami #pen #Worthy</a>
                                         <p>4 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
@@ -198,7 +198,7 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content transitions">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 23px; text-decoration:none; color:aliceblue;">#Simmons #bed #comfortable</a>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 21px; text-decoration:none; color:aliceblue;">#Simmons #bed #comfortable</a>
                                         <p>9 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
@@ -216,7 +216,7 @@
                                         <a href="{% url 'play' %}" class="video-play"></a>
                                     </div>
                                     <div class="video-testimonial-content transitions">
-                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 23px; text-decoration:none; color:aliceblue;">#Burberry #fashion #Music</a>
+                                        <a href="{% url 'play' %}"  class="mb10" style="font-size: 21px; text-decoration:none; color:aliceblue;">#Burberry #fashion #Music</a>
                                         <p>15 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
