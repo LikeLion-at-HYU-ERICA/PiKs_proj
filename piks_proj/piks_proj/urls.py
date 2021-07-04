@@ -26,4 +26,5 @@ urlpatterns = [
     path('best/',  piks_app.views.best, name='best'),
     path('new/',  piks_app.views.new, name='new'),
     path('play/',  piks_app.views.play, name='play'),
+    path('play/fun',  piks_app.views.fun, name='fun'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
