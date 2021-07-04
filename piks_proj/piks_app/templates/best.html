@@ -20,15 +20,17 @@
                 visibility: hidden;
             }
     body{
+        border: 5px solid rgb(51, 52, 59);
         font-weight: 400;
         font-size: 15px;
         font-family: 'NanumSquare';
-        line-height: 1.8em;
+        line-height: 3.2em;
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        margin: 0px;
+        margin: 0px; 
         padding: 0px;
         background-color: #212529;
+        justify-content: center;
     }
 
     #contents h3 {
@@ -54,12 +56,12 @@
         display: inline-block;
         text-align: left;
         background-color: 33343B;
-
     }
 
     
     .box img {
         max-width:100%;
+        margin-bottom: 15px;
 
     }
     .box img:hover {opacity:0.8;}
@@ -81,6 +83,7 @@
         width:30px;
         text-align:center;
         margin:0 auto;
+        line-height: 1.8em;
     }
     @media (min-width:500px){
         #contents {
@@ -376,12 +379,10 @@
 </style>
 <body>
     {% include "topbar.html" %}
-
     <div id="main">
         <div style="background-color:lightcoral;">베스트 광고1</div>
         <div style="background-color:lightblue;">베스트 광고2</div>
     </div>
-
     <div class="item:nth-child">
         <div class="item">1</div>
         <div class="item">2</div>
@@ -395,7 +396,6 @@
         <div class="item">3</div>
         <div class="item">4</div>
     </div>
-
     <div class="container">
         <div class="item">5</div>
         <div class="item">6</div>

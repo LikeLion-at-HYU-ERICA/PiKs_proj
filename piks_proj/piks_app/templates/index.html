@@ -8,13 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script src="jquery.min.js"></script>
-    <link href="jquery.page.css" rel="stylesheet">
-    <script src="jquery.page.js"></script>
-
     <style>
         .not-visible {
             visibility: hidden;
@@ -32,7 +29,7 @@
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
             font-family:'Noto Sans KR', sans-serif !important;
-            top: 37%;
+            top: 36%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -64,6 +61,25 @@
             top: 47%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        .transitions{
+            background: #212529;
+            position: relative;
+            animation: fade 4s forwards;
+            }
+            @keyframes fade {
+            0% {
+                opacity:0.3;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity:1;
+            }
+            }
+        h1{
+            text-transform:uppercase;
         }
         /* .px-3 h1::before{
             content: " P I K S ";
@@ -110,9 +126,10 @@
             <main class="px-3">
                 <p>여기 Skip 할 수 없는 광고가 있습니다.  </p>
                 <br><br>
-                <h1 style="font-family: 'Anton', sans-serif; color:rgb(255, 165, 0); font-size: 100px;"> P I K S </h1>
+                <h1 class="transitions animations" style="font-family: 'Anton', sans-serif; color:rgb(255, 165, 0); font-size: 100px;"> P I K S </h1>
                 <br>
                 <h5 class="lead">
+                    <br>
                 <a href="{% url 'all' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-dark" id="buttton" style="border-width: 2px; font-size: 20px;">  픽스 하러가기  </a>
                 </h5>
             </main>
@@ -126,7 +143,14 @@
         </body>
             <!-- 페이지 이동 js -->
 
-
-
-
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+    $('h1').mousemove(function(e){
+        var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);
+        var rYP = (e.pageY - this.offsetTop+$(this).height()/2);
+        $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+        });
+    });
+</script>
 </html>
