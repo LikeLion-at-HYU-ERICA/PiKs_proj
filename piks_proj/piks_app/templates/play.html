@@ -15,6 +15,10 @@
 </head>
 
         <style>
+            h1 { 
+                text-align: center; 
+                margin-bottom: 20px;
+                }
             body{
             font-weight: 400;
             font-size: 15px;
@@ -82,6 +86,7 @@
             padding: 10px;
             line-height: 100%;
             font-size: 30px;
+            margin-left: 70px;
         }
         .about p{
             vertical-align:bottom;
@@ -93,6 +98,7 @@
             text-align: right;
             font-size: 20px;
             width: 20%;
+            margin-right: 30px;
         }
         .likehidden{
             visibility: hidden;
@@ -101,6 +107,7 @@
             text-align: right;
             font-size: 20px;
             width: 20%;
+            
         }
         .like p{
             vertical-align: middle;
@@ -118,6 +125,7 @@
             float: none;
             width: auto;
             }
+		
         }
         </style>
     <body class="d-flex h-100 text-white line-height: 3.2em;">  
@@ -125,18 +133,21 @@
                 {% include "topbar.html" %}
     <div id="container">
         <div id="content" style="height:730px;">
-            <h1> 돌고래 유괴단의 공익광고 '2066</h1>
-                <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="90%" src="https://www.youtube.com/embed/mYrP4jjIzQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1> Y드립 시네마 '침세계' </h1>
+                <video poster="{% static 'img/play.jpg' %}" style="margin-left: 70px; border: 5px solid rgb(51, 52, 59);" width='1150px' hegiht='300px' src="{% static 'img/MainVideo.mp4'%}" controls></video>
+                <!-- <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="90%" src="{% static 'img/MainVideo.mp4'%}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
         <div id="content" style="height:10px;">  
             <div id="content-header">
                 <div class = "about">
                     <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
-                    <p> #재미있는 </p>
-                    </a>
-                    <p> #신박한 </p>
-                    <p> #공익광고 </p>
-                    <p> #국내 </p>
+                    <p> #재미있는 </p></a>
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #신박한 </p></a>
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #공익광고 </p></a>
+                    <a class=" text-white text-decoration-none" href="{% url 'fun' %}">
+                    <p> #국내 </p></a>
                 </div>
                 <div class = "like">
                     <p style="color: red;"> ❤ </p>
@@ -144,7 +155,7 @@
                     <p style="color: goldenrod;"> ◈ </p>
                     <p style="color: goldenrod;"> 200 </p>
                     </div>
-                <div class = "description">
+                <div class = "description" style= 'margin-right: 100px;'>
                     <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고에 대해 <br>더 알아보기</button>
                 </div>
             </div>
