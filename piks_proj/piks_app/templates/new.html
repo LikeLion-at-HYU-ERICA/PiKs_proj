@@ -75,6 +75,18 @@
                 opacity:1;
             }
             }
+            .transitions{ position: relative; animation: fade 1.4s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}
+            .transitions2{ position: relative; animation: fade 1.6s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}
+            .transitions3{ position: relative; animation: fade 1.8s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
+            .transitions4{ position: relative; animation: fade 2.0s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
+            .transitions5{ position: relative; animation: fade 2.2s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
+            .transitions6{ position: relative; animation: fade 2.4s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
         </style>
     <body class="d-flex h-100 text-white line-height: 3.2em;">  
         <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
@@ -105,7 +117,7 @@
                             </div>
                             <div class="row text-center ">
                                 <!-- video-testimonail -->
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class=" transitions col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/ad1.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -119,11 +131,11 @@
                                         <p>21 minutes ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 40px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions2 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/nike.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -137,11 +149,11 @@
                                         <p>1 hour ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 40px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/ad5.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -155,10 +167,10 @@
                                         <p>2 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 40px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/ad8.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -172,11 +184,11 @@
                                         <p>4 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/ad7.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -190,11 +202,11 @@
                                         <p>9 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
                                 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions6 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/ad6.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -208,7 +220,7 @@
                                         <p>15 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
                             
