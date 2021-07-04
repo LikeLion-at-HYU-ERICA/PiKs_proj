@@ -1,8 +1,13 @@
-    <header style="margin-bottom: 0px;  font-family: 'NanumSquare'; text-rendering:optimizeLegibility;  -webkit-font-smoothing: antialiased;" class="mb-auto">
+<style>
+        #transit{
+            text-transform:uppercase;
+        }
+</style>
+   <header style="margin-bottom: 0px;  font-family: 'NanumSquare'; text-rendering:optimizeLegibility;  -webkit-font-smoothing: antialiased;" class="mb-auto">
     <div>
         <nav class="nav nav-masthead justify-content-center float-md-start">
             <p class="not-visible" style="font-size: 2px;">간</p>
-            <a href="{% url 'index' %}" class="float-md-start mb  0" style="font-family: 'Anton', sans-serif; height:30px; line-height: 1.25em; text-decoration:none; color:rgb(255, 165, 0); font-size: 30px;">P I K S</a>
+            <a id="transit" href="{% url 'index' %}" class="float-md-start mb  0" style="font-family: 'Anton', sans-serif; height:30px; line-height: 1.25em; text-decoration:none; color:rgb(255, 165, 0); font-size: 30px;">P I K S</a>
             <p class="not-visible" style="font-size: 25px;">격</p>
             <a class="nav-link; btn btn-outline-warning fw-bold border-white bg-dark;" href="{% url 'new' %}" style="padding-top:2px; margin-top: 4px; height:30px; 
             color: white; font-size: 16px; ">최신 광고</a>
@@ -29,3 +34,14 @@
         </nav>
     </div>
     </header>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+    $('#transit').mousemove(function(e){
+        var rXP = (e.pageX - this.offsetLeft+$(this).width()/2);
+        var rYP = (e.pageY - this.offsetTop+$(this).height()/2);
+        $('#transit').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+        });
+    });
+</script>
