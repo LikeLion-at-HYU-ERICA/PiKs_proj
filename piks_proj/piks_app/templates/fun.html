@@ -27,7 +27,7 @@
             }
             body{
             font-weight: 400;
-            font-size: 15px;
+            font-size: 13px;
             font-family: 'NanumSquare';
             text-rendering:optimizeLegibility;
             -webkit-font-smoothing: antialiased;
@@ -36,15 +36,15 @@
             padding: 0px;
             background-color: #212529!important;
         }
-            h1, h2, h3, h4, h5, h6 { color: white; margin: 0px 0px 12px 0px;  font-family: 'NanumSquare'; font-weight: 700; line-height: 1; }
-            h1 { font-size: 36px; }
+            h1, h2, h3, h4, h5, h6 { color: white; margin: 0px 0px 12px 0px;  font-family: 'NanumSquare';  line-height: 1; }
+            h1 { font-size: 34px; }
             h2 { font-size: 26px; line-height: 38px; }
             h3 { font-size: 22px; line-height: 32px; }
             h4 { font-size: 20px; }
             h5 { font-size: 16px; line-height: 27px; }
             h6 { font-size: 12px; }
-            p { margin: 0 0 20px; line-height: 1.7; opacity: 0.5; font-style: oblique; }
-            p:last-child { margin: 0px; }
+            p { margin: 10 10 0 20px; margin-top:10px; font-size: 12px; line-height: 1.7; opacity: 0.5; font-style: oblique; }
+            p:last-child { margin: 5px; }
             ul, ol { font-family: 'Roboto', sans-serif; }
             a { text-decoration: none; color: #7d7f82; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
             a:focus, a:hover { text-decoration: none; color: rgb(254, 91, 16); }
@@ -58,23 +58,24 @@
             .video-testimonial-block .video-play::before { content: "\f144"; font: normal normal normal 14px/1; font-family: 'Font Awesome\ 5 Free'; font-weight: 900; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 50px; color: #b3b5bc; }
             .video-testimonial-block .video-play:hover::before { color:  rgb(255, 165, 0);; }
             .mb10{margin-bottom:10px;}
-            .section-title { margin-bottom: 20px; }
+            .section-title h1{ font-size: 30px; margin-bottom: 30px; font-weight: 970; }
             .transitions{
             background: #212529;
             position: relative;
             animation: fade 2s forwards;
             }
-            @keyframes fade {
-            0% {
-                opacity:0.1;
-            }
-            50% {
-                opacity: 0.4;
-            }
-            100% {
-                opacity:1;
-            }
-            }
+            .transitions{ position: relative; animation: fade 1.4s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}
+            .transitions2{ position: relative; animation: fade 1.6s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}
+            .transitions3{ position: relative; animation: fade 1.8s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
+            .transitions4{ position: relative; animation: fade 2.0s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
+            .transitions5{ position: relative; animation: fade 2.2s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
+            .transitions6{ position: relative; animation: fade 2.4s forwards;}
+            @keyframes fade {0% { opacity:0.1;transform: translateY(100px);}50% {opacity: 0.4;}100% {opacity:1; transform: translateY(0px);}}   
         </style>
     <body class="d-flex h-100 text-white line-height: 3.2em;">  
         <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
@@ -98,14 +99,14 @@
                                     </div>
 
                                     <div class="section-title">
-                                        <h1>#재미있는 </h1>
+                                        <h1># 재미있는 </h1>
                                     </div>
                                 </div>
                                 <!-- /.section-title -->
                             </div>
                             <div class="row text-center ">
                                 <!-- video-testimonail -->
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class=" transitions col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/fun1.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -120,11 +121,11 @@
                                         <p>45 minutes ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions2 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/fun6.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -138,11 +139,11 @@
                                         <p>1 hour ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/fun3.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -156,11 +157,11 @@
                                         <p>2 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/fun4.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -174,11 +175,11 @@
                                         <p>4 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions5 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/fun5.PNG' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -192,11 +193,11 @@
                                         <p>6 hours ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
                                 
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="transitions6 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div style="border: 5px solid rgb(51, 52, 59);" class="video-testimonial-block">
                                         <div class="video-thumbnail"><img src="{% static 'img/fun2.png' %}" alt="" class="img-fluid"></div>
                                         <div class="video">
@@ -210,7 +211,7 @@
                                         <p>1 day ago</p>
                                     </div>
                                     <div class = "description" style= 'margin-left: 10px; margin-top: 10px; margin-bottom: 20px;'>
-                                        <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; width:150px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고 보러가기</button>
+                                        <button type="button" class="btn btn-outline-warning me-2" style= "font-size: 16px; font-weight: bold; padding-top:2px; margin-top: 9px; height:30px;">광고 보러가기</button>
                                     </div>
                                 </div>
                             
