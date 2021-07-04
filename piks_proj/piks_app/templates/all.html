@@ -58,7 +58,7 @@
         }
     
         .ad_section .ad_item .ad_contents{
-            padding: 25px 30px;
+            padding: 15px 20px;
         }
     
         .ad_section .ad_item .ad_contents .ad_title{
@@ -110,7 +110,7 @@
         }
     
         .ad_section .ad_item .ad_img{
-            height: 120px;
+            height: 140px;
             position: relative;
             transition-duration: 0.2s;
             background-position: center center;
@@ -193,7 +193,7 @@
     <div class="contents_wrap transitions">
         
         <div class="section-title">
-            <h1>CATEGORY</h1>
+            <h1 class="not-visible">CATEGORY</h1>
         </div>
         <div class="ad_section">
             <div class= "ad_item">
@@ -260,7 +260,7 @@
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background: url({% static 'img/bottega2.jpg' %});  background-attachment: fixed; object-fit: cover; "  alt="slide image"  width="100%">
+                <div class="ad_img" style="background: url({% static 'img/bottega2.jpg' %});   object-fit: cover; "  alt="slide image"  width="100%">
                     <a href="{% url 'play' %}">
                         <span class="more_bt">MORE VIEW</span>
                     </a>
