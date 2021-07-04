@@ -17,3 +17,6 @@ def play(request):
 def best(request):
     return render(request, 'best.html')
 
+def fun(request):
+    return render(request, 'fun.html')
+
