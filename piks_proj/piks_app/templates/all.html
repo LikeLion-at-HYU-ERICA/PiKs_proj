@@ -44,9 +44,13 @@
             vertical-align: top;
             margin: 20px 15px;
             background-color: #ffffff;
+            opacity: 0.8;
             display: inline-block;
             text-align: left;
             box-shadow: 0px 0px 30px 97918F;
+        }
+        .ad_item:hover{
+            opacity: 1; 
         }
     
         .ad_section .ad_item .ad_img{
@@ -58,8 +62,9 @@
         }
     
         .ad_section .ad_item .ad_contents .ad_title{
-            font-size: 17px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 800;
+            opacity: 1;;
             cursor: pointer;
             white-space: nowrap;
             overflow: hidden;
@@ -252,11 +257,56 @@
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
+                <div class="ad_img" style="background: url({% static 'img/bottega2.jpg' %});  background-attachment: fixed; object-fit: cover; "  alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
+                    <div class="ad_title"> LUXURY </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img" style="background: url({% static 'img/flower.jpg' %});  background-attachment: fixed; object-fit: cover; "  alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> FLOWER </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img" style="background: url({% static 'img/vegetables.jpg' %});  background-attachment: fixed; object-fit: none ; "  alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> VEGAN </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img" style="background: url({% static 'img/kids.jpg' %}); object-fit: none ; " alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> KIDS </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img"  style="background: url({% static 'img/makeup.jpg' %}); object-fit: none ; " alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> BEAUTY </div>
+                </div>
+            </div>
+
+            <div class= "ad_item">
+                <div class="ad_img"  style="background: url({% static 'img/desseert2.jpg' %}); object-fit: scale-down ; " alt="slide image"  width="100%">
+                    <span class="more_bt">MORE VIEW</span>
+                </div>
+                <div class="ad_contents">
+                    <div class="ad_title"> DESSERT </div>
                 </div>
             </div>
 
@@ -270,56 +320,11 @@
             </div>
 
             <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
+                <div class="ad_img" style="background: url({% static 'img/bmw2.jpg' %});  object-fit: cover ; " alt="slide image"  alt="slide image"  width="100%">
                     <span class="more_bt">MORE VIEW</span>
                 </div>
                 <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
-                </div>
-            </div>
-
-            <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
-                </div>
-                <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
-                </div>
-            </div>
-
-            <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
-                </div>
-                <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
-                </div>
-            </div>
-
-            <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
-                </div>
-                <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
-                </div>
-            </div>
-
-            <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
-                </div>
-                <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
-                </div>
-            </div>
-
-            <div class= "ad_item">
-                <div class="ad_img" style="background-image: url(https://archello.s3.eu-central-1.amazonaws.com/images/2019/01/07/Interior-Design-of-Luxury-Modern-Residence-6.1546900319.0638.jpg);" alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
-                </div>
-                <div class="ad_contents">
-                    <div class="ad_title"> DESIGN </div>
+                    <div class="ad_title"> CAR </div>
                 </div>
             </div>
 
