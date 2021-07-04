@@ -62,7 +62,7 @@
         }
     
         .ad_section .ad_item .ad_contents .ad_title{
-            font-size: 20px;
+            font-size:19px;
             font-weight: 800;
             opacity: 1;;
             cursor: pointer;
@@ -192,6 +192,9 @@
             {% include "topbar.html" %}
     <div class="contents_wrap transitions">
         
+        <div class="section-title">
+            <h1>CATEGORY</h1>
+        </div>
         <div class="ad_section">
             <div class= "ad_item">
                 <div class="ad_img" style="background-image: url(https://www.usmagazine.com/wp-content/uploads/2021/03/One-Piece-Swimsuit-Stock-Photo.jpg?quality=86&strip=all);" alt="slide image"  width="100%">
@@ -258,7 +261,9 @@
 
             <div class= "ad_item">
                 <div class="ad_img" style="background: url({% static 'img/bottega2.jpg' %});  background-attachment: fixed; object-fit: cover; "  alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
+                    <a href="{% url 'play' %}">
+                        <span class="more_bt">MORE VIEW</span>
+                    </a>
                 </div>
                 <div class="ad_contents">
                     <div class="ad_title"> LUXURY </div>
@@ -303,7 +308,9 @@
 
             <div class= "ad_item">
                 <div class="ad_img"  style="background: url({% static 'img/desseert2.jpg' %}); object-fit: scale-down ; " alt="slide image"  width="100%">
-                    <span class="more_bt">MORE VIEW</span>
+                    <a href="{% url 'play' %}">
+                        <span class="more_bt">MORE VIEW</span>
+                    </a>
                 </div>
                 <div class="ad_contents">
                     <div class="ad_title"> DESSERT </div>
