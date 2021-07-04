@@ -88,7 +88,15 @@
             padding: 10px;
         }
         .like{
-            display: flex; 
+            display: inline-flex; 
+            flex-direction: row;
+            text-align: right;
+            font-size: 20px;
+            width: 20%;
+        }
+        .likehidden{
+            visibility: hidden;
+            display: inline-flex; 
             flex-direction: row;
             text-align: right;
             font-size: 20px;
@@ -116,17 +124,9 @@
         <div class="cover-container d-flex w-110 h-100 p-3 mx-auto flex-column fixed-top">
                 {% include "topbar.html" %}
     <div id="container">
-        <div id="content" style="height:700px;">
-            <h1> 돌고래 유괴단의 공익광고 '2066' 
-                <div class = "like">
-                <p style="color: red;"> ❤ </p>
-                <p style="color: red;"> 180 </p>
-                <p style="color: goldenrod;"> ◈ </p>
-                <p style="color: goldenrod;"> 200 </p>
-                </div> 
-            </h1>
-            
-                <iframe width="100%" height="90%" src="https://www.youtube.com/embed/mYrP4jjIzQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="content" style="height:730px;">
+            <h1> 돌고래 유괴단의 공익광고 '2066</h1>
+                <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="90%" src="https://www.youtube.com/embed/mYrP4jjIzQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="content" style="height:10px;">  
             <div id="content-header">
@@ -134,13 +134,17 @@
                     <p> #재미있는 </p>
                     <p> #신박한 </p>
                     <p> #공익광고 </p>
+                    <p> #국내 </p>
                 </div>
-
-            </div>
-
-                
-            <div class = "description">
-                <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고에 대해 더 알아보기</button>
+                <div class = "like">
+                    <p style="color: red;"> ❤ </p>
+                    <p style="color: red;"> 180 </p>
+                    <p style="color: goldenrod;"> ◈ </p>
+                    <p style="color: goldenrod;"> 200 </p>
+                    </div>
+                <div class = "description">
+                    <button type="button" class="btn btn-warning me-2" style= "font-size: 17px; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;">광고에 대해 더 알아보기</button>
+                </div>
             </div>
         </div>
         <div style="display: flex; flex-direction: column;">
@@ -148,16 +152,16 @@
                 <p>추천 영상</p>
             </div>
             <div id="sidebar">
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/nebigt5Al80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="180" src="https://www.youtube.com/embed/nebigt5Al80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="sidebar">
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/i-E7NiyRDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="180" src="https://www.youtube.com/embed/i-E7NiyRDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="sidebar">
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/RII-T8HNOAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="180" src="https://www.youtube.com/embed/RII-T8HNOAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="sidebar">
-                <iframe width="100%" height="180" src="https://www.youtube.com/embed/Zdhm277s0Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="border: 5px solid rgb(51, 52, 59);" width="100%" height="180" src="https://www.youtube.com/embed/Zdhm277s0Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <!-- <div id="xfooter">
