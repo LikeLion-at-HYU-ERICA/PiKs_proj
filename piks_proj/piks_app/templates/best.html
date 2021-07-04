@@ -24,7 +24,7 @@
         font-weight: 400;
         font-size: 15px;
         font-family: 'NanumSquare';
-        line-height: 3.2em;
+
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         margin: 0px; 
@@ -49,10 +49,10 @@
     }
 
     .box {
-        width:65%;
+        width:85%;
         height:42%;
         vertical-align: top;
-        margin: 20px 15px;
+
         display: inline-block;
         text-align: left;
         background-color: 33343B;
@@ -61,7 +61,7 @@
     
     .box img {
         max-width:100%;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
 
     }
     .box img:hover {opacity:0.8;}
@@ -159,7 +159,7 @@
         width: 1500px;
         height: auto;
         padding:20px;
-        box-sizing:border-box;
+        
         background-color: solid #666;
         margin: 0 auto;
         display:flex;
@@ -186,6 +186,8 @@
         margin:1%;
         flex-wrap:wrap;
         width: 17%;
+        border: 5px solid rgb(51, 52, 59);
+        font-family: 'Noto Sans KR', sans-serif;
     }
     .box img {
         max-width:100%;
@@ -223,15 +225,13 @@
 
         <div id="contents">
 
-        <h3>BEST</h3>
-
-        <p>6월 4주 가장 사랑받은 광고</p>
+        <p style="font-size: 34px;">6월 4주 가장 사랑받은 광고</p>
 
 ​
 
         <div class="box">
 
-        <a href="#"><img src="../static/img/samsung.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/samsung.jpg" alt="slide image"></a>
 
         <h5> 가전 그 이상.쉐프컬렉션 </h5>
         <h6>#세련된 #가전 #요리</h6>
@@ -242,7 +242,7 @@
         ​
 
         <div class="box">
-        <a href="#"><img src="../static/img/dyson.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/dyson.jpg" alt="slide image"></a>
 
         <h5> 오직 다이슨만 가능합니다 </h5>
         <h6>#청소 #디자인 #혁신</h6>
@@ -256,11 +256,11 @@
 
         <div class="box">
 
-        <a href="#"><img src="../static/img/ad1.PNG" alt="slide image"></a>
-
-        <h5> 구찌 : 캡슐 컬렉션 </h5>
-        <h6>#구찌 #명품 #패션</h6>
-        <p> 구찌 </p>
+        <a href="{% url 'play' %}"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/mainsub.webp" alt="slide image"></a>
+            
+        <h5> Y드립 시네마 '침세계' </h5>
+        <h6>#재미있는 #연예인 #국내</h6>
+        <p> 돌고래유괴단 </p>
 
         <div class="red">BEST</div> 
 
@@ -270,7 +270,7 @@
 
         <div class="box">
 
-        <a href="#"><img src="../static/img/cocacola.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/cocacola.jpg" alt="slide image"></a>
 
         <h5> 코카콜라 맛있어 </h5>
         <h6>#음료 #화려한 #감각적인</h6>
@@ -284,7 +284,7 @@
     
         <div class="box">
 
-        <a href="#"><img src="../static/img/bmw.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/bmw.jpg" alt="slide image"></a>
             
         <h5> The speed of safety </h5>
         <h6>#고급스러움 #어두운 #자동차</h6>   
@@ -297,7 +297,7 @@
             
         <div class="box">
 
-        <a href="#"><img src="../static/img/asus.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/asus.jpg" alt="slide image"></a>
                 
         <h5> 프로를 위한 프로 </h5>
         <h6>#속도감 #디자인 #세련된</h6>       
@@ -310,7 +310,7 @@
 
         <div class="box">
 
-        <a href="#"><img src="../static/img/bottega.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/bottega.jpg" alt="slide image"></a>
                     
         <h5> 로고없는 품격 </h5>
         <h6>#명품 #브라운 #가방</h6>        
@@ -323,7 +323,7 @@
 
         <div class="box">
 
-        <a href="#"><img src="../static/img/fashion.jpg" alt="slide image"></a>
+        <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/fashion.jpg" alt="slide image"></a>
                     
         <h5> 소재에서 오는 자신감 </h5>
         <h6>#패션 #여성 #무대</h6>        
@@ -334,10 +334,9 @@
 
         <div class="box">
 
-            <a href="#"><img src="../static/img/mac.jpg" alt="slide image"></a>
-    
+            <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/mac.jpg" alt="slide image"></a>
             <h5> For the love </h5>
-            <h6>#메이크업 #블랙핑크 #다채로운</h6>
+            <h6>#메이크업 #블랙핑크 #화장</h6>
             <p> MAC 코스메틱 </p>
             <div class="red">BEST</div>
             </div>
@@ -345,7 +344,7 @@
 
          <div class="box">
 
-            <a href="#"><img src="../static/img/sealy.jpg" alt="slide image"></a>
+            <a href="#"><img style="border: 5px solid rgb(51, 52, 59);" src="../static/img/sealy.jpg" alt="slide image"></a>
         
             <h5> 흔들리지 않는 편안함 </h5>
             <h6>#메트리스 #편안함 #평화로운</h6>
